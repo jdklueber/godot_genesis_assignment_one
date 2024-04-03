@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdrubys7dianw"]
+
+[ext_resource type="Texture2D" uid="uid://hryyefilvied" path="res://assets/pixel_adventure/Traps/Blocks/Idle.png" id="1_et01t"]
+[ext_resource type="Script" path="res://scenes/obstacle/obstacle.gd" id="1_vibkv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4y13i"]
+size = Vector2(16, 16)
+
+[node name="Obstacle" type="Node2D"]
+script = ExtResource("1_vibkv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_et01t")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_4y13i")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

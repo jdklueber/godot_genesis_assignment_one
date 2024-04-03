@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlbcq5aa4hjr8"]
+
+[ext_resource type="Script" path="res://scenes/ui/title_screen.gd" id="1_erf6f"]
+[ext_resource type="FontFile" uid="uid://bk2oobsq3unib" path="res://assets/fonts/Workbench-Regular.ttf" id="1_x5kqf"]
+[ext_resource type="FontFile" uid="uid://bcljv87sa5qu" path="res://assets/fonts/Roboto-Medium.ttf" id="2_mshsh"]
+[ext_resource type="PackedScene" uid="uid://cjjivi1ck2s1h" path="res://scenes/background/background.tscn" id="3_mo5pk"]
+
+[node name="TitleScreen" type="CanvasLayer"]
+script = ExtResource("1_erf6f")
+
+[node name="TitleLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -57.0
+offset_right = 96.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_x5kqf")
+theme_override_font_sizes/font_size = 48
+text = "LeapFrog"
+
+[node name="StartButton" type="Button" parent="TitleLabel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -30.5
+offset_top = 3.0
+offset_right = 30.5
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_mshsh")
+theme_override_font_sizes/font_size = 24
+text = "Start"
+
+[node name="ExitButton" type="Button" parent="TitleLabel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -18.5
+offset_top = 44.0
+offset_right = 18.5
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_mshsh")
+text = "Exit"
+
+[node name="Background" parent="." instance=ExtResource("3_mo5pk")]
+scroll_rate = -0.25
+
+[connection signal="pressed" from="TitleLabel/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="TitleLabel/ExitButton" to="." method="_on_exit_button_pressed"]

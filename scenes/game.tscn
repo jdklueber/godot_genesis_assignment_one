@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqgp52foqyjit"]
+
+[ext_resource type="PackedScene" uid="uid://cjjivi1ck2s1h" path="res://scenes/background/background.tscn" id="1_p2xvk"]
+[ext_resource type="PackedScene" uid="uid://cvhxcv4ocw4s" path="res://scenes/floor/floor.tscn" id="2_wmttf"]
+[ext_resource type="PackedScene" uid="uid://cx3iorvgy2vxf" path="res://scenes/player/player.tscn" id="3_ddy6f"]
+[ext_resource type="PackedScene" uid="uid://ddt02m8kpvjy6" path="res://scenes/object_spawner/object_spawner.tscn" id="4_lefch"]
+[ext_resource type="PackedScene" uid="uid://bdrubys7dianw" path="res://scenes/obstacle/obstacle.tscn" id="4_vm5qj"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_p2xvk")]
+
+[node name="Floor" parent="." instance=ExtResource("2_wmttf")]
+position = Vector2(-2, -451)
+
+[node name="Player" parent="." instance=ExtResource("3_ddy6f")]
+position = Vector2(25, 142)
+
+[node name="ObstacleSpawner" parent="." instance=ExtResource("4_lefch")]
+position = Vector2(336, 150)
+spawn_rate_min_secs = 0.75
+spawn_rate_max_secs = 1.25
+spawn_scene = ExtResource("4_vm5qj")

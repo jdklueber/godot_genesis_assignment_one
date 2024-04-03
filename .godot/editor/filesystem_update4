@@ -1,0 +1,12 @@
+res://scenes/game.tscn
+res://scenes/debug.tscn
+res://scenes/player/player.tscn
+res://scenes/background/background.tscn
+res://scenes/floor/floor.tscn
+res://scenes/obstacle/obstacle.tscn
+res://scenes/object_spawner/object_spawner.tscn
+res://scenes/main.tscn
+res://scenes/ui/title_screen.tscn
+res://scenes/main.gd
+res://scenes/obstacle/obstacle.gd
+res://scenes/player/player.gd

@@ -1,0 +1,15 @@
+Button
+Label
+CanvasLayer
+AudioStreamPlayer2D
+Timer
+Area2D
+CollisionShape2D
+StaticBody2D
+Sprite2D
+TileMap
+TextureRect
+Node2D
+ParallaxLayer
+ParallaxBackground
+AnimatedSprite2D
