@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712181393
+::res://::1712248032
 ::res://assets/::1712095312
 ::res://assets/audio/::1712014281
 coin2.ogg::AudioStreamOggVorbis::7938690412246305193::1712014226::1712014226::1::::<><>::
@@ -222,7 +222,6 @@ Idle.png::CompressedTexture2D::6415112848278966746::1711757246::1711757248::1:::
 Jump (28x28).png::CompressedTexture2D::8726867567481182442::1711757246::1711757248::1::::<><>::
 ::res://autoloads/::1712180140
 event_bus.gd::GDScript::-1::1712180140::0::1::::<>Node<>::
-::res://godot_genesis_assignment_one/::1712181242
 ::res://scenes/::1712180909
 debug.tscn::PackedScene::1132232311095121126::1712180908::0::1::::<><>::
 game.tscn::PackedScene::8295635571033731079::1712180908::0::1::::<><>::uid://cjjivi1ck2s1h::::res://scenes/background/background.tscn<>uid://cvhxcv4ocw4s::::res://scenes/floor/floor.tscn<>uid://cx3iorvgy2vxf::::res://scenes/player/player.tscn<>uid://ddt02m8kpvjy6::::res://scenes/object_spawner/object_spawner.tscn<>uid://bdrubys7dianw::::res://scenes/obstacle/obstacle.tscn
